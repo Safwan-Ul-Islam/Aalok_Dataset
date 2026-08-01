@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite our paper."
+
+title: "Aalok Dataset"
+
+authors:
+  - family-names: Islam
+    given-names: Safwan Ul
+  - family-names: Saqib
+    given-names: Miwan Sariana
+  - family-names: Rahman
+    given-names: Md Raqibur
+  - family-names: Khan
+    given-names: Riasat
+
+preferred-citation:
+  type: article
+  title: "Fetal Ultrasound Monitoring Using MedSegDiff-V2–DUCKNet Ensemble Segmentation and Explainable Head Circumference Estimation"
+  authors:
+    - family-names: Islam
+      given-names: Safwan Ul
+    - family-names: Saqib
+      given-names: Miwan Sariana
+    - family-names: Rahman
+      given-names: Md Raqibur
+    - family-names: Khan
+      given-names: Riasat
+  journal: "IEEE Access"
+  year: 2026
+  volume: 14
+  start: 108173
+  end: 108186
+  doi: "10.1109/ACCESS.2026.3712728"
