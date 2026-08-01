@@ -93,6 +93,7 @@ Each fetal head boundary was manually annotated and independently reviewed by ex
 The preprocessing pipeline used in our paper includes:
 
 - Hole filling for mask refinement
+- Images were symmetrically padded on both the left and right sides to preserve the original aspect ratio before resizing.
 - Image resizing to **256 × 256**
 - Intensity normalization
 - Online data augmentation during training
@@ -102,9 +103,8 @@ The preprocessing pipeline used in our paper includes:
 - Random zoom
 - Gaussian noise
 - Contrast adjustment
-- Images were padded symmetrically on both the left and right sides to preserve the original aspect ratio before resizing to **256 × 256** pixels.
 
-The train, validation and test sets were generated using a **70 : 15 : 15** split before augmentation.
+The train, validation, and test sets were generated using a **70 : 15 : 15** split before augmentation.
 
 ---
 
@@ -115,7 +115,7 @@ Aalok_Dataset/
 │
 ├── Aalok_Dataset/
 │   ├── Images/
-│   ├── Masks/
+│   └──  Masks/
 │   
 │
 ├── README.md
@@ -123,20 +123,6 @@ Aalok_Dataset/
 └── CITATION.cff
 └── pixel_size_and_HC.csv
 ```
-
----
-
-# Processing Scripts
-
-The preprocessing and dataset preparation scripts used in our paper will be added to this repository, including:
-
-- Image preprocessing
-- Mask refinement
-- Dataset splitting
-- Image resizing
-- Data augmentation pipeline
-
-These scripts enable full reproducibility of the experiments reported in the paper.
 
 ---
 
