@@ -129,8 +129,8 @@ Aalok_Dataset/
 
 **Naming Convention**
 
-- `alk-XXX.png` → Original fetal ultrasound image
-- `alk-XXX_mask.png` → Corresponding binary segmentation mask
+- `alk_XXX.png` → Original fetal ultrasound image
+- `alk_XXX_mask.png` → Corresponding binary segmentation mask
 - `pixel_size_and_HC.csv` → Metadata containing the image filename, pixel size (mm), and ground-truth head circumference (HC) in millimetres.
 ---
 
