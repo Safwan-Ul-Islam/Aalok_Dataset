@@ -66,6 +66,22 @@ The dataset contains manually annotated fetal head boundaries created and verifi
 
 ---
 
+# Additional Dataset Metadata
+
+The repository includes a metadata file named **`pixel_size_and_HC.csv`**, which provides image-level information for each ultrasound scan.
+
+The CSV file contains the following columns:
+
+| Column | Description |
+|--------|-------------|
+| `file_name` | Name of the ultrasound image |
+| `HC_MM` | Ground-truth head circumference measurement (in millimetres) |
+| `pixel_size_MM` | Pixel spacing (millimetres per pixel) used for converting pixel measurements to real-world units |
+
+This metadata enables researchers to reproduce head circumference estimation and evaluate measurement accuracy in physical units (mm).
+
+---
+
 # Data Collection
 
 The dataset was collected from **Aalok Diagnostic & Hospital, Dhaka, Bangladesh** during routine antenatal examinations using a **Samsung WS80A Elite Ultrasound System**.
@@ -96,14 +112,18 @@ The train, validation and test sets were generated using a **70 : 15 : 15** spli
 
 # Repository Structure
 
-```
+```text
 Aalok_Dataset/
 │
-├── Images/
-├── Masks/
+├── Aalok_Dataset/
+│   ├── Images/
+│   ├── Masks/
+│   
+│
 ├── README.md
 ├── LICENSE
 └── CITATION.cff
+└── pixel_size_and_HC.csv
 ```
 
 ---
@@ -124,7 +144,13 @@ These scripts enable full reproducibility of the experiments reported in the pap
 
 # Citation
 
-If you use this dataset in your research, please cite:
+If you use this dataset in your research, please cite our paper.
+
+### IEEE Citation
+
+S. U. Islam, M. S. Saqib, M. R. Rahman and R. Khan, "Fetal Ultrasound Monitoring Using MedSegDiff-V2–DUCKNet Ensemble Segmentation and Explainable Head Circumference Estimation," *IEEE Access*, vol. 14, pp. 108173–108186, 2026, doi: **10.1109/ACCESS.2026.3712728**.
+
+### BibTeX
 
 ```bibtex
 @ARTICLE{Islam2026,
@@ -137,7 +163,6 @@ If you use this dataset in your research, please cite:
   doi={10.1109/ACCESS.2026.3712728}
 }
 ```
-
 ---
 
 # License
