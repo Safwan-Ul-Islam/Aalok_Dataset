@@ -1,5 +1,3 @@
-# Aalok_Dataset
-
 # Aalok Dataset
 
 > 📄 **Official dataset accompanying our IEEE Access 2026 publication:**  
