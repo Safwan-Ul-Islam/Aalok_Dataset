@@ -114,16 +114,24 @@ The train, validation, and test sets were generated using a **70 : 15 : 15** spl
 Aalok_Dataset/
 │
 ├── Aalok_Dataset/
-│   ├── Images/
-│   └──  Masks/
-│   
+│   ├── alk_001.png
+│   ├── alk_001_mask.png
+│   ├── alk_002.png
+│   ├── alk_002_mask.png
+│   └── .....
+│
 │
 ├── README.md
 ├── LICENSE
-└── CITATION.cff
+├── CITATION.cff
 └── pixel_size_and_HC.csv
 ```
 
+**Naming Convention**
+
+- `alk-XXX.png` → Original fetal ultrasound image
+- `alk-XXX_mask.png` → Corresponding binary segmentation mask
+- `pixel_size_and_HC.csv` → Metadata containing the image filename, pixel size (mm), and ground-truth head circumference (HC) in millimetres.
 ---
 
 # Citation
@@ -155,14 +163,4 @@ This dataset is distributed under the **Creative Commons Attribution 4.0 Interna
 
 ---
 
-# Contact
 
-**Safwan Ul Islam**
-
-Department of Electrical and Computer Engineering
-
-North South University
-
-Dhaka, Bangladesh
-
-For questions regarding the dataset, please open an Issue in this repository.
